@@ -1,0 +1,56 @@
+#Interlinks li{
+    text-align: center;
+    background-color: #F0F0F0;
+    font-size: 3em;
+    border-radius: 1em 1em 1em 1em;
+    padding: 1em;
+    margin: 1em;
+    list-style-type: none;
+}
+table {
+    font-family:Verdana,"Sans-serif";
+    margin: 2%;
+    width: 96%;
+    border-width: 1px;
+    border-collapse: collapse;
+    background-color: white;
+}
+th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    background-color: #dedede; /* Light grey */
+}
+td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+}
+
+.Striped tr:nth-child(odd) {
+    background: #F0F0F0;
+}
+
+.ToDo{
+    background-color: #FAF882; /* Light orange */
+}
+
+.OutOfStock{
+    background-color: #FF9C9C; /*Light red*/ 
+}
+.LowStock{
+    background-color: #FFDC9C; /* Light orange */
+}
+.InStock{
+    background-color: #BAFFC2; /* Light green */
+}
+
+.ObjectCell{
+    padding:0;
+
+}
+.ObjectCell input[type=submit]{
+    width:100%;
+    height:100%;
+    font-size: 1em;
+}

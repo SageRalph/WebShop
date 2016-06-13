@@ -1,0 +1,113 @@
+body{
+    background-color: white;
+    /* font-family: sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+.anchor{
+    display: block; 
+    position: relative; 
+    top: -5em; 
+    visibility: hidden;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+#LeftSection{
+    /* margin: 17em 0; */
+    min-width:31em;
+    max-width:60em;
+    /* margin-top: 6em; */
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    right:7em;
+    font-size: 0.8em;
+}
+#RightSection{
+    position:fixed;
+    padding: 0.5em;
+    right: 0;
+    top: 5em;
+    width: 15em;
+    /* background-color: #e9ebee; */
+    height: 100%;
+    /* border: gold; */
+    /* border-top-style: solid; */
+}
+#SingleSection{
+    min-width:31em;
+    max-width:60em;
+    margin-top:5em;
+
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+@media all and (max-width: 80em) {
+    #LeftSection{
+        right:0;
+    }
+    #RightSection{
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6em;
+    }
+}
+footer{
+    margin-top: 0.8em;
+    font-size: 1.3em;
+    background-color: #F0F0F0;
+    text-align: center;
+    position: relative;
+    border-radius: 1em;
+    /* width: 100%; */
+}
+.Notification{
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #F0F0F0;
+    font-size: 1.5em;
+    border-radius: 1em;
+    padding: 1em;
+    font-family:Verdana,"Sans-serif";
+    margin-top: 4.5em;
+}
+textArea{
+    font: inherit; /* For IE */
+}
+p{
+    text-align: justify;
+    font-family:Verdana,"Sans-serif";
+}
+
+.InvalidInput{
+    border-color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+.TwoButton{
+    width:49.5% !important;
+    margin:0%;
+    height:2em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.ThreeButton{
+    width:32% !important;
+    height:2.5em;
+    font-size: 1em;
+    text-align: center;
+}
+.ThreeButton + input[type=submit]{
+    margin-left: 1.5%;
+}
+.ThreeButton + input{
+    margin-left: 1.5%;
+}

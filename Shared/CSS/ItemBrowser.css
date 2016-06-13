@@ -1,0 +1,125 @@
+.ProductThumbnail{
+    height:11em;
+    width:11em;
+    margin:0 0.5em 0.5em 0;
+    float:left;
+}
+.ProductDetailsList{
+    float:right;
+}
+.ProductDetailsList li{
+    font-size: 1.3em;
+    background-color: #B9B9B9;
+    margin: 0.6em;
+    padding: 0.2em 0.5em 0.25em 0.5em;
+    border-radius: 0.3em;
+    /* font-family: sans-serif; */
+    list-style-type: none;
+}
+.ListedProduct{
+    font-size: 1em;
+    background-color: #F0F0F0;
+    padding:0.5em;
+    margin-top: 1.2em;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 0.5em grey;
+
+    overflow: hidden;
+}
+.ListedProduct input[type=submit]{
+    font-size: 1.2em;
+    width: 100%;
+}
+.ListedProduct:hover{
+    box-shadow: 0 0 1.5em #CC9900;
+}
+.ListedProduct h1{
+    font-size: 1.6em;
+    color: white;
+    background-color: #B9B9B9;
+    margin: 0;
+    padding: 0;
+    padding-left:0.5em;
+    border-radius: 0.3em;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.ListedProduct p{
+    margin-top:1em;
+}
+
+.Minimised{
+    max-height: 11em;
+    -webkit-transition: max-height 1s;
+    transition: max-height 1s;
+}
+.Minimised p{
+    min-height: 8em;
+    max-height: 7.3em;
+    overflow: hidden;
+}
+
+.Expanded{
+    max-height:100em;
+    -webkit-transition: max-height 2s;
+    transition: max-height 2s;
+}
+.Expanded p{
+    min-height: 8em;
+}
+
+@media all and (max-width: 850px) {
+    .ListedProduct p{
+        min-height:3.5em;
+
+        margin-top:10em;
+    }
+    .Minimised{
+        max-height: 15.5em;
+    }
+    .Minimised p{
+        max-height:3.5em;
+    }
+}
+.Reviews{
+    border-radius: 0.5em;
+    margin: 1em 0 1em 0;
+    padding-bottom: 1px;
+    background-color: #D4D4D4;
+}
+.Reviews article{
+    background-color: #F0F0F0;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+.Reviews h1{
+    border-radius: 0.3em 0.3em 0 0;
+}
+.Reviews h2{
+    padding-left:0.5em;
+    margin-bottom:0;
+    border-radius: 0.3em 0.3em 0 0;
+    background-color: #B9B9B9;
+}
+.Reviews p {
+    min-height:0;
+    margin-top:0;
+    padding: 0.5em;
+}
+.Images{
+    width:100%;
+    margin:0.5em 0 0.5em 0;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    white-space:nowrap;
+}
+.Images img{
+    height: 12em;
+    margin:0.3em;
+}
+
+footer input[type=submit]{
+    margin-left:2em;
+    font-size: 0.8em;
+}
